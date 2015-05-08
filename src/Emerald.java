@@ -19,6 +19,7 @@ public class Emerald extends JComponent {
 		}
 	}
 	
+	@Override
 	public void paintComponent(Graphics g) {
 		Graphics2D g2 = (Graphics2D) g;
 		g2.drawImage(this.img, 0, 0, null);

@@ -73,7 +73,7 @@ public class MusicPlayer {
 		this.clip.flush();
 		this.clip.setFramePosition(0);
 		this.clip.start();
-		this.clip.loop(this.clip.LOOP_CONTINUOUSLY);
+		this.clip.loop(Clip.LOOP_CONTINUOUSLY);
 		try {
 			Thread.sleep(200);
 		} catch (Exception e) {

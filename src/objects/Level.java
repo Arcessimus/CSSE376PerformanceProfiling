@@ -330,11 +330,18 @@ public class Level {
 	public void draw(Graphics2D g2) {
 		int currentPosition;
 		// cache the tile background in an image so tiles don't need to be drawn again and again redundantly.
+		HashMap<Integer, BufferedImage> cachedImages = new HashMap<Integer, BufferedImage>();
 		Graphics2D g = img.createGraphics();
 		for (int r = 0; r < this.map.length; r++) {
 			for (int c = 0; c < this.map[r].length; c++) {
 				currentPosition = this.map[r][c];
-				drawTileImage(currentPosition, r, c, g);
+				if(cachedImages.containsKey(currentPosition))
+				{
+					//something or nothing as the case may be
+				}
+				else {
+					drawTileImage(currentPosition, r, c, g);
+				}
 			}
 		}
 		g.dispose();

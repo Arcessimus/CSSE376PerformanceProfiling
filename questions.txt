@@ -1,3 +1,11 @@
 1) 701 ms
 
 2) about twice as fast. a little bit more.
+
+3) it's usually under the options menu and then there's a counter in one of the corners
+of the screen
+
+4) towards the end it was a little more than 100 fps, which is still above that threshold
+
+5) drawTileImage
+

@@ -20,7 +20,7 @@ public class Game {
 		
 		// Setting frame basics.
 		frame.pack();
-		frame.setDefaultCloseOperation(frame.EXIT_ON_CLOSE);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setVisible(true);
 		frame.setResizable(true);
 		
